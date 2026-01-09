@@ -9,6 +9,7 @@ body {
   background: linear-gradient(-45deg, #0f172a, #020617, #1e293b, #38bdf8);
   background-size: 400% 400%;
   animation: gradientBG 12s ease infinite;
+  overflow-x: hidden;
 }
 
 @keyframes gradientBG {
@@ -90,4 +91,109 @@ button.download {
 #preview {
   max-width: 1200px;
   margin: 60px auto;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .app {
+    padding: 20px 15px;
+  }
+
+  .form {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  input, textarea, select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 11px;
+  }
+
+  #preview {
+    margin: 40px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .app p {
+    font-size: 14px;
+  }
+
+  textarea {
+    height: 70px;
+  }
+}
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .hero,
+  .header {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero h1,
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .hero img,
+  .header img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .section,
+  .container {
+    padding: 0 15px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  ul {
+    padding-left: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero h1,
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .hero p,
+  .header p {
+    font-size: 14px;
+  }
+
+  .skill {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
 }
