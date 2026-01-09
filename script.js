@@ -79,6 +79,11 @@ function generate() {
   );
 
   preview.innerHTML = finalHTML;
+  if (window.innerWidth < 768) {
+  preview.style.transform = "scale(1)";
+  preview.style.transformOrigin = "top center";
+}
+
 }
 
 /* ===== DOWNLOAD ===== */
