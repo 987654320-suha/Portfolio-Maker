@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio Maker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-shape shape1"></div>
+<div class="bg-shape shape2"></div>
+
+<div class="app">
+  <h1>Portfolio Maker</h1>
+  <p>Create a professional portfolio easily</p>
+
+  <div class="form">
+    <input id="name" placeholder="Full Name">
+    <input id="role" placeholder="Professional Role">
+    <textarea id="about" placeholder="About Me"></textarea>
+
+    <input id="skills" placeholder="Skills (comma separated)">
+
+    <h3>Projects</h3>
+    <div id="projects">
+      <div class="project">
+        <input class="p-title" placeholder="Project Title">
+        <input class="p-link" placeholder="Project Link">
+        <textarea class="p-desc" placeholder="Short Description"></textarea>
+      </div>
+    </div>
+    <button type="button" onclick="addProject()">+ Add Project</button>
+
+    <h3>Profile Photo</h3>
+    <input type="file" id="photo" accept="image/*">
+
+    <h3>Resume (PDF)</h3>
+    <input type="file" id="resume" accept="application/pdf">
+
+    <input id="github" placeholder="GitHub URL">
+    <input id="linkedin" placeholder="LinkedIn URL">
+
+    <select id="template">
+      <option value="modern">Modern</option>
+      <option value="minimal">Minimal</option>
+      <option value="corporate">Corporate</option>
+    </select>
+
+    <button onclick="generate()">Generate Portfolio</button>
+    <button class="download" onclick="download()">Download Portfolio</button>
+  </div>
+</div>
+
+<div id="preview"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

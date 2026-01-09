@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background: linear-gradient(-45deg, #0f172a, #020617, #1e293b, #38bdf8);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-shape {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: rgba(56, 189, 248, 0.35);
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.shape1 {
+  top: 10%;
+  left: 10%;
+}
+
+.shape2 {
+  bottom: 10%;
+  right: 10%;
+  background: rgba(99, 102, 241, 0.35);
+}
+
+
+.app {
+  max-width: 540px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.form {
+  background: #020617;
+  padding: 22px;
+  border-radius: 14px;
+}
+
+input, textarea, select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.download {
+  background: #22c55e;
+}
+
+.project {
+  background: #020617;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#preview {
+  max-width: 1200px;
+  margin: 60px auto;
+}
